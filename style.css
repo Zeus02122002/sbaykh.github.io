@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Khmer&family=Lato:wght@900&family=Montserrat&family=Noto+Serif+Khmer:wght@400;500&family=Poppins:wght@300;400&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khmer&family=Lato:wght@900&family=Montserrat&family=Noto+Sans+Khmer:wght@600&family=Noto+Serif+Khmer:wght@400;500&family=Poppins:wght@300;400&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khmer&family=Lato:wght@900&family=Montserrat&family=Noto+Sans+Khmer:wght@600&family=Noto+Serif+Khmer:wght@400;500&family=Poppins:wght@300;400&family=Roboto&display=swap');
+:root{
+    --letter-title-en: 'Poppins', sans-serif;
+    --letter-content-kh: 'Noto Serif Khmer', serif;
+    --letter-title-kh:'Noto Sans Khmer', sans-serif;
+    --color-white:rgba(255, 255, 255, 0.726);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container-width{
+    max-width: 80%;
+    /* padding:20px 0px; */
+    margin: 0px auto;
+}
+
+.style-font-navbar{
+    font-family: var(--letter-title-en);
+    text-transform: uppercase;
+}
+ /* =============make header ================ */
+.header{
+    max-width: 100%;
+    /* overflow: hidden; */
+    background-color: black;
+
+    height: 120px;
+}
+.header .inbox-header{
+    
+    display: flex;
+    flex-direction: row;
+    /* background-color: yellow; */
+    justify-content: space-between;
+    align-items: center;
+    height:120px;
+ 
+ 
+}
+.inbox-header .logo{
+   height: 80px;
+   width: 80px;
+}
+.inbox-header .logo img{
+ height: 100%;
+ width: 100%;
+}
+.inbox-header .header-ads{
+    height: 80px;
+    height: 80px;
+}
+.inbox-header .header-ads img{
+    width: 100%;
+    height: 100%;
+}
+ /* ================end of header=================== */
+ .navbar{
+    background-color: red;
+    max-width: 100%;
+ padding: 0px;
+ overflow: hidden;
+ cursor: pointer;
+ height:60px;
+ margin-bottom: 20px;
+ 
+ }
+
+ .navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    padding: 0px;
+    /* margin: 0 auto; */
+ }
+ .navbar ul li a{
+    display: block;
+    /* background-color: black; */
+    padding:14px 0px;
+    font-weight: bold;
+    font-family: var(--letter-title-kh);
+    color: var(--color-white);
+    font-size:20px;
+}
+.navbar ul li:nth-child(1) a {
+    background-color: rgba(0, 0, 0, 0.242);
+    padding: 14px ;
+    color: white;
+    /* display: block; */
+}
+.navbar ul li a:hover{
+    color: white;
+    
+}
+/* =====section tag use for make slide new information========= */
+.slide-new{
+    /* background-color: black; */
+    margin-top: 20px;
+    height: 700px;
+    display: flex;
+    padding: 0px;
+    gap: 1%;
+    margin-top: 20px;
+    margin: auto;
+}
+.slide-new .slide-content-new{
+width: 79%;
+/* background-color: yellow; */
+display: grid;
+grid-template-columns: 1.6fr 1fr;
+grid-template-rows: repeat(2,1fr);
+ /* margin-bottom: 20px; */
+}
+/* =======slide contetn1======== */
+.color-blur{
+    background-color: rgba(0, 0, 0, 0.272);
+    width: 100%;
+    height: 100%;
+}
+.style-background{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slide-new .slide-content-new .content1{
+    background-image: url(photo/content_slide1.jpg);
+   
+}
+/* .aslide-new .alise-content */
+.slide-new .slide-content-new .content2{
+    /* background-color: rgb(53, 0, 128); */
+    background-image: url(photo/content_slide2.jpg);
+}
+.slide-new .slide-content-new .content3{
+    /* background-color: rgb(128, 0, 0); */
+    background-image: url(photo/content_slide3.jpg);
+}
+.slide-new .slide-content-new .content4{
+    /* background-color: rgb(128, 0, 98); */
+    background-image: url(photo/content_slide4.jpeg);
+}
+/* make button for specific slide new */
+.slide-new .box-button{
+/* background-color: yellow; */
+height: 20%;
+/* z-index: 1; */
+
+}
+.slide-new .box-button .button-title{
+    border: none;
+    font-size: 24px;
+    /* position: absolute; */
+    font-family: var(--letter-title-kh);
+    color: white;
+    font-weight: bold;
+    margin-top: 12px;
+    text-align: center;
+    padding: 10px 60px 10px 20px;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 90% 100%, 75% 0);
+}
+.color-btn-live{
+    background-color: tomato;
+}
+.color-btn-sport{
+    background-color: rgb(57, 179, 255);
+}
+.color-btn-tech{
+  background-color: rgb(94, 199, 94);
+}
+.color-btn-entertain{
+    background-color: rgb(255, 52, 116);
+}
+/* ====use tag main for input title content of slide==== */
+.title-content{
+    /* background-color: blue; */
+    height: 66%;
+    overflow: hidden;
+    color: white;
+    
+/* background-color: yellow; */;
+
+}
+.slide-content-new .title-content p{
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: var(--letter-content-kh);
+    transform: translateY(120px);
+    line-height: 1.6;
+    margin-left: 24px;
+   /* text-align: center; */
+}                      
+                                                                                        
+.slide-new .title-content p span{
+font-size: 16px;
+visibility: hidden;
+/* background-color: yellow; */
+}
+/* when hover */
+.content:hover .title-content{
+    transform: translateY(-160px);
+    transition: all 1s;
+    overflow: visible;
+    /* position: absolute; */
+    z-index: 1;
+    
+}
+.content:hover p{
+    color: red;
+  
+}
+.content:hover p span{
+visibility: visible;
+transition: all 1s;
+color: red;
+}
+
+.content:hover .color-blur{
+    background-color: rgba(0, 0, 0, 0.742);
+    transition: all 1s;
+    /* color: red; */
+  }   
+/* use third tag main input date */
+.box-date{
+    /* background-color: green; */
+    width: 100%;
+    height: 14%;
+}
+.content:hover .box-date{
+    background-color: rgb(0, 0, 0);
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    color: white;
+    /* height: 20% */
+}
+.content:hover .date{
+    color: white;
+    transition: all 1s;
+}
+.box-date .date{
+      color: white;
+      font-size: 16px;
+      margin-left: 24px;
+      font-family: var(--letter-content-kh);
+      font-weight: bold;
+}
+/* ============slide new ads======== */
+.slide-ads-new{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr  , 1fr;
+    width: 20%;
+    height: 100%;
+    
+    gap: 2%;
+    justify-content: space-between;
+}
+.slide-new .slide-ads-new .ads-new-top{
+    width: 100%;
+    /* height: 49%; */
+    /* margin-bottom:2%; */
+}
+ .slide-new .slide-ads-new .ads-new-top img{
+    width: 100%;
+    height: 100%;
+}
+.slide-new .slide-ads-new .ads-new-bottom{
+    width: 100%;
+    /* height: 49%; */
+    
+}
+.slide-new .slide-ads-new .ads-new-bottom img{
+    width: 100%;
+    height: 100%;
+}
+/* =====section slide video ========= */
+/* header of button slide */
+/* .header-title-video{
+    border-bottom: 5px solid   rgb(255, 22, 61);
+    margin-top: 20px;
+} */
